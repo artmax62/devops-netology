@@ -20,4 +20,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 Игнорятся вышеуказанные файлы во всех вложенных подкаталогах
+
 next line in commit Fix
+
+Строка добавлена через IDE
