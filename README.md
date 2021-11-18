@@ -24,3 +24,4 @@ terraform.rc
 next line in commit Fix
 
 Строка добавлена через IDE
+Вторая строка добавлена в IDE
