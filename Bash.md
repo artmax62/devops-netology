@@ -75,7 +75,28 @@ done
 
 ### Ваш скрипт:
 ```bash
-???
+i=(192.168.0.1 173.194.222.113 87.250.250.24)
+while ((1==1))
+do
+        for ip in ${i[@]}
+        do
+                for n in {1..5}
+                do
+                nc -zvw3 $ip 80
+                        if ((&? =0))
+
+			then
+                        date >>log.txt
+                        echo $ip:80 status $? >>log.txt
+
+                        else
+                        date >>error.txt
+                        echo $ip:80 status $? >>error.txt
+                        exit
+                        fi
+                done
+        done
+done
 ```
 
 ## Дополнительное задание (со звездочкой*) - необязательно к выполнению
@@ -84,5 +105,5 @@ done
 
 ### Ваш скрипт:
 ```bash
-???
+&&&
 ```
